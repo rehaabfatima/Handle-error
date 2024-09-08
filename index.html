@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Error handling</title>
+    </head>
+    <body>
+        <h1>Handle error </h1>
+        <p id="or"></p>
+        <script>
+            try{
+              var a=20;
+              var b=0;
+              document.getElementsByClassName("or").innerHTML=a/b;
+            }
+            catch(err){
+                document.getElementById("or").innerHTML=err.message;
+            }
+        </script>
+    </body>
+</html>
